@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6F6BC0"
+    tools:context=".DostAct">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/header"
+            android:layout_width="416dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="-4dp"
+            android:background="@drawable/rounded_header_background"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/headerText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Навигация"
+                android:textColor="#FFFFFF"
+                android:layout_marginLeft="139dp"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+            <ImageView
+                android:id="@+id/profileIcon"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:src="@drawable/profile"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="230dp"
+            android:layout_marginLeft="31dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/oval_background">
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="134dp"
+                android:layout_height="193dp"
+                android:layout_marginTop="10dp"
+                app:srcCompat="@drawable/dost1" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Казанский кремль — главная достопримечательность столицы Татарстана, которую без преувеличения можно назвать «сердцем» города. Это огромный комплекс, в котором гармонично и самобытно сочетаются русские и татарские культурные традиции.Кремль включает в себя несколько исторических и архитектурных комплексов, раскинувшихся на территории в 1500 кв. м: "
+                android:textColor="#423E96"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="450dp"
+            android:layout_marginLeft="31dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/oval_background">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="110dp"
+                app:srcCompat="@drawable/dost2jpg" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Мечеть «Кул-Шариф» (тат. «Кол Шәриф» мәчете) — главная джума-мечеть республики Татарстан и города Казани (с 2005 года)[1], расположенная на территории Казанского кремля. Одна из главных достопримечательностей города.Строительство храма было начато в 1996 году как воссоздание легендарной многоминаретной мечети столицы Казанского ханства, центра религиозного просвещения и развития наук Среднего Поволжья XVI столетия. Историческая мечеть была разрушена в октябре 1552 года во время штурма Казани войсками Ивана Грозного. Воссозданная мечеть названа в честь последнего имама сеида Кул Шарифа, одного из предводителей обороны Казани"
+                android:textColor="#423E96"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="400dp"
+            android:layout_marginLeft="31dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/oval_background">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="80dp"
+                app:srcCompat="@drawable/dost3" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Центр семьи «Казан» (в разговорной речи просто «Чаша»[1]) — главный дворец бракосочетаний (ЗАГС) в городе Казань и республике Татарстан. Одна из главных современных достопримечательностей города[источник не указан 159 дней], обыгрывающих его название ввиду того, что построен в виде огромного котла-казана. На крыше расположена смотровая площадка с видом на Казанский кремль, Кремлёвскую набережную и округу. Открыт 5 июля 2013 года"
+                android:textColor="#423E96"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</ScrollView>

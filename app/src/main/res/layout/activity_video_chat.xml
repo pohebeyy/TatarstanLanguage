@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VideoChat"
+    android:orientation="vertical"
+    android:background="#6F6BC0">
+
+    <!-- Шапка с закругленными нижними краями -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_header_background"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/headerText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Видео чат"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/profileIcon"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:src="@drawable/profile"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <!-- Навигационные кнопки -->
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="16dp"
+        android:padding="16dp"
+        android:backgroundTint="#FFFFFF"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="10dp"
+        android:clipToPadding="false"
+        android:background="@drawable/rounded_layout_video">
+
+        <!-- Выбор уровня знаний -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Выберите уровень знаний"
+            android:textColor="#423E96"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp"/>
+
+        <RadioGroup
+            android:id="@+id/levelRadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/noviceRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Новичок"
+                android:textColor="#423E96"
+                android:buttonTint="#423E96"
+                android:layout_marginBottom="8dp"/>
+
+            <RadioButton
+                android:id="@+id/intermediateRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Средний"
+                android:textColor="#423E96"
+                android:buttonTint="#423E96"
+                android:layout_marginBottom="8dp"/>
+
+            <RadioButton
+                android:id="@+id/advancedRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Продвинутый"
+                android:textColor="#423E96"
+                android:buttonTint="#423E96"/>
+        </RadioGroup>
+
+        <!-- Выбор рейтинга -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Выберите рейтинг"
+            android:textColor="#423E96"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"/>
+
+        <RadioGroup
+            android:id="@+id/ratingRadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/lessThan200RadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Менее 200 очков"
+                android:textColor="#423E96"
+                android:buttonTint="#423E96"
+                android:layout_marginBottom="8dp"/>
+
+            <RadioButton
+                android:id="@+id/between200And500RadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="От 200 до 500 очков"
+                android:textColor="#423E96"
+                android:buttonTint="#423E96"
+                android:layout_marginBottom="8dp"/>
+
+            <RadioButton
+                android:id="@+id/moreThan1000RadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Более 1000 очков"
+                android:textColor="#423E96"
+                android:buttonTint="#423E96"/>
+        </RadioGroup>
+    </LinearLayout>
+
+    <!-- Кнопка подтверждения -->
+    <Button
+        android:id="@+id/confirmButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:backgroundTint="#423E96"
+        android:text="Подтвердить"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_gravity="center"
+        android:layout_height="50dp"
+        android:layout_marginTop="140dp"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/button_glavn"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#423E96"
+            android:text="Главная страница" />
+
+        <Button
+            android:id="@+id/button_lich"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:backgroundTint="#423E96"
+            android:layout_weight="1"
+            android:text="Личный кабинет" />
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

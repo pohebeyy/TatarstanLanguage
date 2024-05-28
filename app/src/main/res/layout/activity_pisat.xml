@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6F6BC0"
+    tools:context=".PisatAct">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Вставленный заголовок -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="-3dp"
+            android:background="@drawable/rounded_header_background"
+            android:layout_marginTop="20dp"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/headerText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Навигация"
+                android:textColor="#FFFFFF"
+                android:layout_marginLeft="139dp"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+            <ImageView
+                android:id="@+id/profileIcon"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:src="@drawable/profile"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- Остальная часть содержимого -->
+        <LinearLayout
+            android:layout_width="370dp"
+            android:background="@drawable/oval_background"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="250dp">
+
+            <ImageView
+                android:id="@+id/imageView1_"
+                android:layout_width="150dp"
+                android:layout_height="180dp"
+                android:layout_marginTop="30dp"
+                app:srcCompat="@drawable/pisat1" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#423E96"
+                android:text="Бурнаш Фатхи — поэт, прозаик, переводчик, публицист, театральный деятель. Автор многих драматических и лирических творений, обогативших и татарскую художественную литературу, и театр. Как писатель и общественный деятель раскрылся после Октябрьской революции. Был организатором и редактором ряда татарских газет и журналов: " />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="370dp"
+            android:background="@drawable/oval_background"
+            android:layout_height="425dp"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="15dp">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="150dp"
+                android:layout_marginTop="80dp"
+                android:layout_height="200dp"
+                app:srcCompat="@drawable/pisat2" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#423E96"
+                android:text="Габдулла Тукай — очень любимый и почитаемый нами поэт, а также публицист, общественный деятель и литературный критик. Еще с детства он переводил басни Крылова и увлекался поэзией Пушкина и Лермонтова. Его первым замечательным поэтическим созданием на чисто татарском языке был перевод стихотворения А.Кольцова «Что ты спишь, мужичок?», опубликованный в 1905 году под названием «Сон мужика». Так же писатель работал в различных журналах,газетах и писал свои произведения, в которых отражалось его боевое настроение на тему Родины. 2 (15) апреля 1913 года в 20 часов 15 минут Габдуллы Тукая не стало, как писал Горький, «от голода и чахотки». "></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="370dp"
+            android:background="@drawable/oval_background"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="17dp"
+            android:layout_height="330dp">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="35dp"
+                app:srcCompat="@drawable/pisat3" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#423E96"
+                android:text="Мирхайдар Файзуллин — татарский поэт, драматург, публицист, составитель сборника народных песен.В 14 лет написал первую пьесу, в 1912 г. вышел его первый сборник «Свои стихи». А что интересно он собирал произведения башкирского и татарского фольклора в сёлах Орского уезда и Старобалтачевской волости Бирского уезда.Скончался 9 июля 1928 года. Похоронен рядом с братской могилой в центре Баймака. У Дома печати установлен бюст писателя."></TextView>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

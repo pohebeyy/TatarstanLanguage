@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#6F6BC0"
+    tools:context=".MoreActivity">
+
+    <!-- Шапка с закругленными нижними краями -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_header_background"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/headerText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Обучение"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/profileIcon"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:src="@drawable/profile"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Кнопка "Перевод на падежи" -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/fragment1"
+        android:layout_width="320dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="4dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/fragment1TextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Перевод на падежи"
+                android:textColor="#423E96"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toTopOf="@id/button2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="130dp"
+                android:backgroundTint="#423E96"
+                android:layout_height="48dp"
+                android:text="Перейти"
+                android:layout_marginTop="15dp"
+
+                android:layout_marginLeft="150dp"
+                android:textColor="#FFFFFF"
+                app:circularflow_radiusInDP=""
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/fragment1TextView" />
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Кнопка "Фразеологизмы" -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/fragment2"
+        android:layout_width="320dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="4dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+
+            <TextView
+                android:id="@+id/fragment2TextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Фразеологизмы"
+                android:textColor="#423E96"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toTopOf="@id/button_fraz"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/button_fraz"
+                android:layout_width="130dp"
+                android:layout_height="48dp"
+                android:backgroundTint="#423E96"
+                android:text="Перейти"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="150dp"
+                android:textColor="#FFFFFF"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/fragment2TextView" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Кнопка "Достопримечательности" -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/fragment3"
+        android:layout_width="320dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="4dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/fragment3TextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Достопримечательности"
+                android:textColor="#423E96"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toTopOf="@id/button_dost"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/button_dost"
+                android:layout_width="130dp"
+                android:layout_height="48dp"
+                android:text="Перейти"
+                android:layout_marginLeft="150dp"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#423E96"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="15dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/fragment3TextView" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Кнопка "Писатели" -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/fragment4"
+        android:layout_width="320dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="4dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/fragment4TextView"
+                android:layout_width="0dp"
+
+
+            android:layout_height="wrap_content"
+            android:text="Писатели"
+            android:textColor="#423E96"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            app:layout_constraintBottom_toTopOf="@id/button_avtor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/button_avtor"
+                android:layout_width="130dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="150dp"
+                android:text="Перейти"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="15dp"
+                android:backgroundTint="#423E96"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/fragment4TextView" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

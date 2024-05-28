@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.KarimTest"
+        tools:targetApi="31">
+        <activity
+            android:name=".UserProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".VideoChat"
+            android:exported="false" />
+        <activity
+            android:name=".OnlineChat"
+            android:exported="false" />
+        <activity
+            android:name=".MoreActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".PisatAct"
+            android:exported="false" />
+        <activity
+            android:name=".DostAct"
+            android:exported="false" />
+        <activity
+            android:name=".TranslateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".giftsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Lvl3Advanced"
+            android:exported="false" />
+        <activity
+            android:name=".Lvl2Advanced"
+            android:exported="false" />
+        <activity
+            android:name=".Lvl1AdvancedActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Level3Intermadialate"
+            android:exported="false" />
+        <activity
+            android:name=".Level2Intermadialate"
+            android:exported="false" />
+        <activity
+            android:name=".Level1Intermadialate"
+            android:exported="false" />
+        <activity
+            android:name=".Level3_Novice"
+            android:exported="false" />
+        <activity
+            android:name=".Level1_Novice"
+            android:exported="false" />
+        <activity
+            android:name=".Level2_Novice"
+            android:exported="false" />
+        <activity
+            android:name=".NoviceLessonActivity"
+            android:exported="false" />
+        <activity
+            android:name=".IntermediateLessonActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdvancedLessonActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FrazFragment"
+            android:exported="false" />
+        <activity
+            android:name=".FraziolagizmActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UchebnikActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NewsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainScreen"
+            android:exported="false" />
+        <activity
+            android:name=".AuthActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

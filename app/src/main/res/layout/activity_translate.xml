@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#6F6BC0"
+    tools:context=".TranslateActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="-3dp"
+        android:background="@drawable/rounded_header_background"
+        android:layout_marginTop="20dp"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/headerText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Навигация"
+            android:textColor="#FFFFFF"
+            android:layout_marginLeft="139dp"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <ImageView
+            android:id="@+id/profileIcon"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:src="@drawable/profile"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        style="@style/Widget.Material3.Snackbar.TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="90dp"
+        android:backgroundTint="#39E639"
+        android:text="Перевод в падежи"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.531"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/editTextWord"
+        android:layout_width="200dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:layout_height="wrap_content"
+        android:hint="Введите слово на татарском языке"
+        android:layout_marginTop="140dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/buttonGenerate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Сгенерировать слова"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#423E96"
+        app:layout_constraintTop_toBottomOf="@id/editTextWord"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollViewTables"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/buttonGenerate"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TableLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*"
+            android:backgroundTint="#423E96"
+            android:background="@drawable/oval_background">
+
+
+
+        <!-- Заголовок -->
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Падежи \ Числа"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="единственное"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="множественное"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:padding="8dp" />
+
+            </TableRow>
+
+            <!-- Строки с падежами -->
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Основной (Баш килеш)"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:padding="8dp" />
+
+                <!-- Здесь можно оставить пустые ячейки или заполнить их данными -->
+                <TextView
+                    android:layout_width="0dp"
+                    android:id="@+id/such1edin"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:id="@+id/such1mno"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:padding="8dp" />
+
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Притяжательный (Иялек килеше)"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:padding="8dp" />
+
+                <!-- Здесь можно оставить пустые ячейки или заполнить их данными -->
+                <TextView
+                    android:layout_width="0dp"
+                    android:id="@+id/such2edin"
+                    android:textColor="@color/white"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:gravity="center"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:id="@+id/such2mno"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:padding="8dp" />
+
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/white"
+                    android:text="Направительный (Юнәлеш килеше"
+                    android:gravity="center"
+                    android:padding="8dp" />
+
+                <!-- Здесь можно оставить пустые ячейки или заполнить их данными -->
+                <TextView
+                    android:layout_width="0dp"
+                    android:id="@+id/such3edin"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:id="@+id/such3mno"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/white"
+                    android:text=""
+                    android:gravity="center"
+                    android:padding="8dp" />
+
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/white"
+                    android:text="Винительный (Төшем килеше)"
+                    android:gravity="center"
+                    android:padding="8dp" />
+
+                <!-- Здесь можно оставить пустые ячейки или заполнить их данными -->
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/such4edin"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:id="@+id/such4mno"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/white"
+                    android:text=""
+                    android:gravity="center"
+                    android:padding="8dp" />
+
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/white"
+                    android:text="Исходный (Чыгыш килеше)"
+                    android:gravity="center"
+                    android:padding="8dp" />
+
+                <!-- Здесь можно оставить пустые ячейки или заполнить их данными -->
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/such5edin"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:id="@+id/such5mno"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/white"
+                    android:text=""
+                    android:gravity="center"
+                    android:padding="8dp" />
+
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/white"
+                    android:text="Местно-временной (Урын-вакыт килеше)"
+                    android:gravity="center"
+                    android:padding="8dp" />
+
+                <!-- Здесь можно оставить пустые ячейки или заполнить их данными -->
+                <TextView
+                    android:layout_width="0dp"
+                    android:id="@+id/such6edin"
+                    android:textColor="@color/white"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:gravity="center"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:id="@+id/such6mno"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:padding="8dp" />
+
+            </TableRow>
+
+            <!-- Добавьте аналогичные строки для остальных падежей -->
+
+        </TableLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_gravity="center"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/button_glavn"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#423E96"
+            android:text="Главная страница" />
+
+        <Button
+            android:id="@+id/button_lich"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:backgroundTint="#423E96"
+            android:layout_weight="1"
+            android:text="Личный кабинет" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

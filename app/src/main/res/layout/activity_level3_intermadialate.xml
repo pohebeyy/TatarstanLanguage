@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#6F6BC0"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/header"
+            android:layout_width="426dp"
+            android:layout_marginLeft="-8dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/rounded_header_background"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/headerText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Обучение"
+                android:textColor="#FFFFFF"
+                android:layout_marginLeft="139dp"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+            <ImageView
+                android:id="@+id/profileIcon"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:src="@drawable/profile"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageView
+            android:id="@+id/imageView_nachalo"
+            android:layout_width="259dp"
+            android:layout_height="283dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="72dp"
+            android:layout_marginTop="107dp"
+            android:layout_marginEnd="80dp"
+            app:srcCompat="@drawable/pers_fon4" />
+
+        <TextView
+            android:id="@+id/textView_nachalo2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="хорошо, давай проверим твои полученные знания!"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp" />
+
+        <TextView
+            android:id="@+id/textView_question1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/white"
+            android:text="Каково значение слова тәнсәглек на татарском языке?"
+            android:textSize="18sp"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroup1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radioButton1a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="Дружба" />
+
+            <RadioButton
+                android:id="@+id/radioButton1b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="Свобода" />
+
+            <RadioButton
+                android:id="@+id/radioButton1c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="Любовь"
+                android:checked="true" />
+
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView_question2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_marginTop="20dp"
+            android:text="Какое слово правильно вставить в следующее предложение: Я хочу получить новые яуапы?"
+            android:textSize="18sp"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroup2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radioButton2a"
+                android:layout_width="wrap_content"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"
+                android:text="Друзей" />
+
+            <RadioButton
+                android:id="@+id/radioButton2b"
+                android:layout_width="wrap_content"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"
+                android:text="Путешествия" />
+
+            <RadioButton
+                android:id="@+id/radioButton2c"
+                android:layout_width="wrap_content"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"
+                android:text="Знания" />
+
+
+        </RadioGroup>
+
+
+        <Button
+            android:id="@+id/button_nachalo3"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#423E96"
+            android:text="Готово!" />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name" translatable="false">KarimTest</string>
+
+    <style name="LessonButton">
+        <item name="android:backgroundTint">#423E96</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+</resources>

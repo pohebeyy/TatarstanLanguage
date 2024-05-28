@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="300dp"
+    android:layout_height="320dp"
+    android:layout_gravity="center"
+    android:background="@drawable/oval_background">
+
+
+    <TextView
+        style="@style/Widget.Material3.Snackbar.TextView"
+        android:id = "@+id/text_news_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="23dp"
+        android:backgroundTint="#39E639"
+        android:text="Учебник"
+        android:textColor="#423E96"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_uch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="257dp"
+        android:backgroundTint="#9C2222"
+        android:text="ачык" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_news_title"
+        android:layout_alignParentStart="true"
+        android:textColor="#423E96"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="78dp"
+        android:text="Задания,обучения," />
+
+
+
+
+</RelativeLayout>

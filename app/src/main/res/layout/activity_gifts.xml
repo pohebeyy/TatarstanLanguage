@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6F6BC0"
+    tools:context=".giftsActivity">
+
+
+
+
+
+
+
+
+    <ImageView
+        android:id="@+id/futbolka"
+        android:layout_width="152dp"
+        android:layout_height="343dp"
+        android:layout_marginTop="150dp"
+        app:srcCompat="@drawable/bf" />
+
+    <Button
+        android:id="@+id/button_futbolka"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="380dp"
+        android:backgroundTint="#9C2222"
+        android:text="Купить за 300 баллов" />
+
+    <ImageView
+        android:id="@+id/krujka"
+        android:layout_width="152dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="370dp"
+        app:srcCompat="@drawable/orig" />
+
+    <Button
+        android:id="@+id/button_krujka"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="570dp"
+        android:backgroundTint="#9C2222"
+        android:text="купить за 200 баллов" />
+
+
+</RelativeLayout>

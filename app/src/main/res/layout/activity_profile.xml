@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6F6BC0"
+    tools:context=".ProfileActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/header"
+            android:layout_width="426dp"
+            android:layout_marginLeft="-3dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/rounded_header_background"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/headerText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Личный кабинет"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/profileIcon"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/profileIcon"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:src="@drawable/profile"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="70dp"
+            android:orientation="vertical"
+            android:background="@drawable/oval_background"
+            android:layout_marginTop="300dp"
+            android:layout_below="@id/header">
+
+            <TextView
+                android:id="@+id/textViewPoints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="165dp"
+                android:layout_marginTop="22dp"
+                android:text="Баллы: 0"
+                android:textColor="#423E96"
+                android:textSize="18sp" />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="70dp"
+            android:orientation="vertical"
+            android:background="@drawable/oval_background"
+            android:layout_marginTop="450dp">
+
+            <TextView
+                android:id="@+id/textViewRait"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ваш уровень рейтинга: 0"
+                android:layout_marginLeft="100dp"
+                android:textColor="#423E96"
+                android:textSize="18sp"
+                android:layout_below="@id/header"
+                android:layout_marginTop="22dp"
+                android:layout_centerHorizontal="true" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="178dp"
+            android:layout_height="246dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="-5dp"
+            app:srcCompat="@drawable/account_avatar_face_man_people_profile_user_icon_123197" />
+
+        <LinearLayout
+            android:layout_width="230dp"
+            android:layout_height="230dp"
+            android:layout_marginLeft="165dp"
+            android:orientation="vertical"
+            android:background="@drawable/oval_background"
+            android:layout_marginTop="80dp">
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1 день подряд"
+                android:layout_marginLeft="80dp"
+                android:textColor="#423E96"
+                android:textSize="18sp"
+                android:layout_marginTop="20dp"
+                 />
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1/20 опыта за день"
+                android:layout_marginLeft="7dp"
+                android:textColor="#423E96"
+
+                android:textSize="18sp"
+                android:layout_marginTop="55dp"
+                />
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="6 дней до цели"
+                android:layout_marginLeft="80dp"
+                android:textColor="#423E96"
+                android:textSize="18sp"
+                android:layout_marginTop="54dp"
+                 />
+
+
+
+        </LinearLayout>
+        <View
+            android:layout_width="10000dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="570dp"
+            android:background="#FFFFFF"
+            />
+        <ImageView
+            android:id="@+id/futbolka"
+            android:layout_width="152dp"
+            android:layout_height="343dp"
+            android:layout_marginTop="480dp"
+            android:layout_marginLeft="20dp"
+            app:srcCompat="@drawable/bf" />
+
+        <Button
+            android:id="@+id/button_futbolka"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="710dp"
+
+            android:backgroundTint="#423E96"
+            android:text="Купить за 300 баллов" />
+
+        <ImageView
+            android:id="@+id/krujka"
+            android:layout_width="152dp"
+            android:layout_height="119dp"
+            android:layout_marginLeft="235dp"
+            android:layout_marginTop="590dp"
+
+            app:srcCompat="@drawable/orig" />
+
+        <Button
+            android:id="@+id/button_krujka"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="710dp"
+            android:layout_marginLeft="208dp"
+            android:backgroundTint="#423E96"
+            android:text="купить за 200 баллов" />
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_gravity="center"
+            android:layout_height="50dp"
+            android:layout_marginTop="800dp"
+            android:layout_marginLeft="28dp"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/button_glavn"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#423E96"
+                android:text="Главная страница" />
+
+            <Button
+                android:id="@+id/button_lich"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:backgroundTint="#423E96"
+                android:layout_weight="1"
+                android:text="Личный кабинет" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</ScrollView>

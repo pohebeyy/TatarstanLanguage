@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="320dp"
+    android:layout_gravity="center"
+    android:background="@drawable/oval_background">
+
+    <TextView
+        android:id="@+id/text_news_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Получение Падежей"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"/>
+    <Button
+        android:id="@+id/button_trans"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="257dp"
+        android:backgroundTint="#9C2222"
+        android:text="Открыть" />"
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_news_title"
+        android:layout_alignParentStart="true"
+        android:textColor="@color/white"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="78dp"
+        android:text="
+Получение падежей Татарских слов" />
+
+
+</RelativeLayout>

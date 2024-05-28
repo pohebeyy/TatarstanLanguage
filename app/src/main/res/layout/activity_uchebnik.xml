@@ -1,0 +1,184 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UchebnikActivity"
+    android:background="#6F6BC0">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/header"
+        android:layout_width="422dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/rounded_header_background"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/headerText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Обучение"
+            android:textColor="#FFFFFF"
+            android:layout_marginLeft="139dp"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <ImageView
+            android:id="@+id/profileIcon"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:src="@drawable/profile"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/lessonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center"
+        android:background="@drawable/oval_background">
+
+        <!-- Кнопки уроков -->
+        <Button
+            android:id="@+id/lesson1Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Урок 1"
+            android:textColor="@android:color/white"
+            android:background="@drawable/custom_button_background"
+            android:backgroundTint="#423E96"
+            android:layout_marginBottom="8dp"/>
+
+        <Button
+            android:id="@+id/lesson2Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Урок 2"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#423E96"
+            android:background="@drawable/custom_button_background"
+            android:layout_marginBottom="8dp"/>
+
+        <Button
+            android:id="@+id/lesson3Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Тест"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#423E96"
+            android:background="@drawable/custom_button_background"
+            android:layout_marginBottom="8dp"/>
+
+        <Button
+            android:id="@+id/lesson4Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Урок 3"
+            android:background="@drawable/custom_button_background"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#423E96"
+            android:layout_marginBottom="8dp"/>
+
+        <Button
+            android:id="@+id/lesson5Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Урок 4"
+            android:background="@drawable/custom_button_background"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#423E96"
+            android:layout_marginBottom="8dp"/>
+
+        <Button
+            android:id="@+id/lesson6Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Тест"
+            android:background="@drawable/custom_button_background"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#423E96"
+            android:layout_marginBottom="8dp"/>
+        <Button
+            android:id="@+id/lesson7Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Урок 5"
+            android:background="@drawable/custom_button_background"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#423E96"
+            android:layout_marginBottom="8dp"/>
+        <Button
+            android:id="@+id/lesson8Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Урок 6"
+            android:background="@drawable/custom_button_background"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#423E96"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Тест -->
+        <Button
+            android:id="@+id/lesson9Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Тест"
+            android:background="@drawable/custom_button_background"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#423E96"
+            android:layout_marginBottom="8dp"/>
+
+    </LinearLayout>
+
+    <!-- Кнопка для дополнительного контента -->
+    <Button
+        android:id="@+id/button_translate"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lessonLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/custom_button_background"
+        android:backgroundTint="#423E96"
+        android:text="Дополнительный контент" />
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_gravity="center"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="800dp">
+
+
+        <Button
+            android:id="@+id/button_glavn"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#423E96"
+            android:text="Главная страница" />
+
+        <Button
+            android:id="@+id/button_lich"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:backgroundTint="#423E96"
+            android:layout_weight="1"
+            android:text="Личный кабинет" />
+    </LinearLayout>
+
+</RelativeLayout>
